@@ -1,0 +1,72 @@
+.mis-proyectos{
+    background-color: $azul;
+    h1{
+        color: $blanco;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        color: $blanco;
+    }
+    .tarjetas{
+        @include telefono{
+            padding: 0px 60px;
+        }
+        padding: 0px 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .tarjeta{
+            border-radius: 1rem;
+            width: 500px;
+            height: 500px;
+            background-color: white;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, .1);
+            margin-top: 50px;
+            @include telefono{
+                margin-right: 50px;
+            }
+            margin-right: 0px;
+            margin-bottom: 50px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, .1);
+            .tarjeta-head{
+                img{
+                    width: 100%;
+                }
+            }
+            .tarjeta-body{
+                @include telefono{
+                    padding: 20px 30px;
+                }
+                padding: 20px 10px;
+                p{
+                    text-align: justify;
+                    color: $negro;
+                }
+                a{
+                    display: block;
+                    text-decoration: none;
+                    color: $azul;
+                    border: 2px solid $azul;
+                    background-color: $blanco;
+                    padding: 10px 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bold;
+                    @include telefono{
+                        width: 50%; 
+                    }
+                    width: 90%;
+                    margin: 20px auto;
+                    transition: all .6s ease;
+                    &:hover{
+                        color: $blanco;
+                        background-color: $azul;
+                    }
+                }
+            }
+        }
+    }
+}
+

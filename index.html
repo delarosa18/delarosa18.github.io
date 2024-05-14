@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Luis Miguel Web</title>
+  <meta name="description" content="Portafolio web">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Luis Miguel Web">
+  <meta property="og:type" content="website">
+  <!-- <meta property="og:url" content="https://miguelportafolioweb.000webhostapp.com/"> -->
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="build/css/app.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="progreso">
+  </div>
+  <div class="social-bar">
+    <a href="https://github.com/LMiguelGJ" target="_blank" class="ico github"><i class="fab fa-github"></i></a>
+    <a href="https://do.linkedin.com/in/luis-miguel-gonz%C3%A1lez-jim%C3%A9nez-742826252?trk=people-guest_people_search-card" target="_blank" class="ico linkedin"><i class="fab fa-linkedin"></i></a>
+    <!-- <a href="https://www.instagram.com/miguelangel09__/" target="_blank" class="ico instagram"><i class="fab fa-instagram"></i></a> -->
+    <!-- <a href="https://t.me/axtra27" target="_blank" class="ico telegram"><i class="fab fa-telegram"></i></a> -->
+    <!-- <a href="whatsapp://send?text=Hola, Buenas? &amp;phone=+1 849 351 3051&amp;abid=+1 849 351 3051" target="_blank" class="ico whatsapp"><i class="fab fa-whatsapp"></i></a> -->
+    <!-- <a href="https://twitter.com/MiguelAngelG0" target="_blank" class="ico twitter"><i class="fab fa-twitter"></i></a> -->
+  </div>
+  <header>
+    <div class="logo">
+      <a href="index.html">Luis Miguel Web</a>
+    </div>
+    <nav class="menu-main">
+      <div class="menutoggle" onclick="menu_activo();"><i class="fas fa-bars"></i></div>
+      <ul>
+        <li><a href="#home" onclick="menu_activo();">Home</a></li>
+        <li><a href="#SobreMi" onclick="menu_activo();">Acerca de</a></li>
+        <li><a href="#proyectos" onclick="menu_activo();">Portafolio</a></li>
+        <li><a href="#contact"  onclick="menu_activo();"class="a-btn">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="banner" id="home">
+    <div class="fondo">
+      <div class="contenedor">
+        <div class="presentacion">
+          <h2>Hey</h2>
+          <h1>Soy Desarrollador Web <span>Front-End Apacionado</span></h1>
+          <p>Web Developer</p>
+          <a href="#SobreMi">Sobre mí</a>
+        </div>
+      </div>
+      <div id="SobreMi" class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-3.10,65.63 C232.78,34.03 233.35,34.03 503.10,1.48 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+    </div>
+  </section>
+
+  <section class="sobre-mi">
+    <div class="contenido">
+      <div class="texto">
+        <h1>Sobre mi</h1>
+        <p>
+          Hola,
+          Mi nombre es Luis Migueel González soy un <a href="https://www.google.com/search?q=Desarrollador+web&oq=des&aqs=chrome.1.69i60j69i59j69i61l3j69i65l3.1890j0j7&sourceid=chrome&ie=UTF-8" target="_blank" rel="noopener noreferrer">desarrollador web</a> (soy de República Dominicana) desde el 2017 me adentre en este mundo del desarrollo web y he venido aprendiendo nuevas tecnologías y creciendo a medida que voy aprendiendo, me concidero una persona autodidacta.
+        </p>
+      </div>
+      <div class="imagen no-movil">
+        <img src="build/img/developer.svg" alt="imagen">
+      </div>
+    </div>
+  </section>
+
+  <section class="habilidades">
+    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-4.22,-0.48 C254.79,58.70 265.52,60.69 510.44,104.11 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #333333;"></path></svg></div>
+    <div class="contenido">
+      <div class="texto">
+        <h1>Mis habilidades</h1>
+        <p>
+          Actualmente cuento con las siguientes habilidades que puedo desenvolver en el desarrollo web, aunque aún sigo perfeccionándolas y aprendiendo otras nuevas, para así aumentar mis conocimientos y ofrecer mejores servicios. Actualmente me estoy formando en React.
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card html">
+          <i class="fab fa-html5"></i>
+          <p>HTML</p>
+        </div>
+  
+        <div class="card css">
+          <i class="fab fa-css3"></i>
+          <p>CSS</p>
+        </div>
+  
+        <div class="card javascript">
+          <i class="fab fa-js-square"></i>
+          <p>JavaScript</p>
+        </div>
+  
+        <div class="card git">
+          <i class="fab fa-git-alt"></i>
+          <p>GIT</p>
+        </div>
+  
+        <div class="card php">
+          <i class="fab fa-php"></i>
+          <p>PHP</p>
+        </div>
+
+        <div class="card sass">
+          <i class="fab fa-sass"></i>
+          <p>Sass</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <div class="mis-proyectos">
+      <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-3.67,39.95 C257.05,89.30 179.17,73.52 509.87,150.48 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #333333;"></path></svg></div>
+      <h1>Portafolio</h1>
+      <p>Dejame mostrarte algunos de mis trabajos</p>
+      <div class="tarjetas">
+
+        <!-- <div class="tarjeta" id="proyectoA">
+          <div class="tarjeta-head">
+            <img src="build/img/proyecto1.png" alt="proyecto1">
+          </div>
+          <div class="tarjeta-body">
+            <p>
+              Angel Unloking es una página web que brinda servicios sobre el desbloqueo de celulares iPhone bloqueados.
+              Para mas información puedes acceder a la página y ver los servicios que brinda y los precios para cada tipo de desbloqueo Iphone.
+            </p>
+            <a href="https://angelunloking.000webhostapp.com/" target="_blank"><i class="fas fa-eye"></i> Ver sitio web</a>
+          </div>
+        </div> -->
+
+        <div class="tarjeta" id="proyectoB">
+          <div class="tarjeta-head">
+            <img src="build/img/apprestaurant.jpg" alt="proyecto2">
+          </div>
+          <div class="tarjeta-body">
+            <p>
+              Jardin Restaurant es un sitio web creado con bubble en la que he trabajado donde seofrece una experiencia gastronómica única con el sabor único de la cocina del suroeste. Ya sea que esté aquí para un almuerzo o cena de negocios, celebrando una ocasión especial o buscando un ambiente romántico para una cita.
+            </p>
+            <a href="https://jardinrestaurant.bubbleapps.io/version-test?debug_mode=true" target="_blank"><i class="fas fa-eye"></i> Ver sitio web</a>
+          </div>
+        </div>
+
+        <div class="tarjeta" id="proyectoC">
+          <div class="tarjeta-head">
+            <img src="build/img/validador.png" alt="proyecto3">
+          </div>
+          <div class="tarjeta-body">
+            <p>
+              Validador de cedula dominicana para confirmar si una cedula es real
+            </p>
+            <a href="https://miguel-gonzalez18.github.io/validador-de-cedula/" target="_blank"><i class="fas fa-eye"></i> Ver sitio web</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contacto">
+      <div class="formulario">
+        <div class="inputs">
+          <div class="titulo-contact">
+            <h1>Contacto</h1>
+            <p>Si necesitas un sitio web o contractarme puedes eviarme un mensaje tambien puedes visitar mis redes sociales</p>
+          </div>
+          <form action="correo.php" method="post">
+            <div class="form-group">
+              <label for="name"><i class="fas fa-user"></i> Nombre*</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email"><i class="fas fa-at"></i> Correo*</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message"><i class="fas fa-sms"></i> Mensaje*</label>
+              <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
+  
+            <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div class="svgContact" style="height: 100%; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M87.09,-29.44 C101.20,18.91 71.29,147.20 -15.05,169.90 L0.00,150.00 L0.00,0.00 Z" style="stroke: none; fill: rgba(40, 116, 166, 80%);"></path></svg></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contenido">
+      <h1>Redes Sociales</h1>
+      <div class="redes">
+        <a href="https://github.com/Miguel-Gonzalez18" target="_blank" class="github"><i class="fab fa-github"></i></a>
+        <a href="https://do.linkedin.com/in/luis-miguel-gonz%C3%A1lez-jim%C3%A9nez-742826252?trk=people-guest_people_search-card" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></i></a>
+        <!-- <a href="https://www.instagram.com/miguelangel09__/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a> -->
+        <!-- <a href="https://t.me/axtra27" target="_blank" class="telegram"><i class="fab fa-telegram"></i></a> -->
+        <!-- <a href="whatsapp://send?text=Hola, Buenas? &amp;phone=+1 849 351 3051&amp;abid=+1 849 351 3051" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a> -->
+        <!-- <a href="https://twitter.com/MiguelAngelG0" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a> -->
+      </div>
+    </div>
+    <p>Copyright ©. Todos los derechos reservados 2024, creado por Luis Miguel Web</p>
+  </footer>
+  <script src="build/js/bundle.min.js"></script>
+</body>
+</html>

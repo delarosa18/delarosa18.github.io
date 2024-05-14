@@ -1,0 +1,49 @@
+footer{
+    background-color: $azul;
+    & > .contenido > h1{
+        color: $blanco;
+        text-align: center;
+    }
+    .contenido{
+        .redes{
+            padding: 20px 0px;
+            text-align: center;
+            a{
+              @include tabletMax{
+                font-size: 2.5rem;
+              }
+              text-decoration: none;
+              font-size: 4rem;
+              color: white;
+              margin: 20px;
+              transition: all .5s ease;
+            }
+            .github:hover{
+                color: #171515;
+              }
+            .linkedin:hover{
+                color: #171515;
+              }
+            // .instagram:hover{
+            //   color: #c976c5;
+            // }
+            // .telegram:hover{
+            //   color: #628ba7;
+            // }
+            // .whatsapp:hover{
+            //   color: #4FCE5D;
+            // }
+            // .twitter:hover{
+            //   color: rgb(29, 155, 240);
+            // }
+        }
+    }
+    p{
+        color: white!important;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background-color: #115A8A;
+    }
+}

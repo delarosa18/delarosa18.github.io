@@ -1,0 +1,36 @@
+*{
+    font-family: $fuente_principal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  .contenido{
+    @include telefono{
+      padding: 10px 60px;  
+    }
+    padding: 10px 15px;
+    width: 100%;
+  }
+  h1{
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  p{
+    font-family: $fuente_principal;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+  }
+  ::-webkit-scrollbar{
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+  }
+  ::-webkit-scrollbar-thumb{
+    background: $azul;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: $azul;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }

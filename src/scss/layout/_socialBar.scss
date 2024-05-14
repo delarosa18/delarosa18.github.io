@@ -1,0 +1,46 @@
+.social-bar{
+    @include tablet{
+        display: block;
+    }
+    display: none;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    z-index: 1;
+    a{
+        display: block;
+        padding: .7rem;
+        margin-top: .2rem;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        i{
+            font-size: 2rem;
+            color: $blanco;
+        }
+    }
+    .github{
+        background-color: $negro;
+    }
+    .linkedin{
+        background-color: $negro;
+    }
+    // .instagram{
+    //     background: #f09433; 
+    //     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    //     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    //     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    //     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    // }
+    // .telegram{
+    //     background-color: $telegram;
+    // }
+    // .whatsapp{
+    //     background-color: $verde
+    // }
+    // .twitter{
+    //     background-color: $twitter;
+    // }
+    .ico:hover{
+        transform: scale(1.1);
+    }
+}

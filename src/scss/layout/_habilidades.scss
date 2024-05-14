@@ -1,0 +1,138 @@
+.habilidades{
+    @include telefono{
+        margin-top: 100px;    
+    }
+    margin-top: 50px;
+    .contenido{
+        @include tabletMax{
+            display: block;
+        }
+        display: flex;
+        justify-content: space-around;
+        background-color: $grisOscuro;
+        .texto{
+            @include tabletMax{
+                width: 100%;
+            }
+            width: 45%;
+            p{
+                color: $blanco!important;
+            }
+            h1{
+                color: $blanco;
+                &::after{
+                    content: "";
+                    height: .5rem;
+                    width: 13rem;
+                    background-color: $azul;
+                    display: block;
+                    margin: -10px 0 0 0;
+                }
+            }
+        }
+        .cards{
+            @include tabletMax{
+                width: 100%;
+            }
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .card{
+                @include telefono{
+                    width: 220px;
+                    padding: 20px;
+                }
+                display: block;
+                background-color: #3b3b3b;
+                width: 100px;
+                height: auto;
+                padding: 10px;
+                margin-top: 10px;
+                text-align: center;
+                box-shadow: 0 0px 20px rgba(0, 0, 0, .1);
+                cursor: pointer;
+                transition: all .8s ease;
+                i{
+                    @include telefono{
+                        font-size: 8rem;
+                    }
+                    font-size: 3rem;
+                    margin-bottom: 20px;
+                    color: #666666;
+                }
+                p{
+                    font-weight: bold;
+                    color: #666666!important;
+                    display: block;
+                }
+                &.html{
+                    &:hover > i{
+                        color: $blanco!important;
+                    }
+                    &:hover{
+                        background-color: #E34C26;
+                    }
+                    &:hover > p{
+                        color: $blanco!important;
+                    }
+                }
+                &.css{
+                    &:hover > i{
+                        color: $blanco!important;
+                    }
+                    &:hover{
+                        background-color: #2E86C1;
+                    }
+                    &:hover > p{
+                        color: $blanco!important;
+                    }
+                }
+                &.javascript{
+                    &:hover > i{
+                        color: $blanco!important;
+                    }
+                    &:hover{
+                        background-color: #F0DB4F;
+                    }
+                    &:hover > p{
+                        color: $blanco!important;
+                    }
+                }
+                &.git{
+                    &:hover > i{
+                        color: $blanco!important;
+                    }
+                    &:hover{
+                        background-color: #F34F29;
+                    }
+                    &:hover > p{
+                        color: $blanco!important;
+                    }
+                }
+                &.php{
+                    &:hover > i{
+                        color: $blanco!important;
+                    }
+                    &:hover{
+                        background-color: #8993BE;
+                    }
+                    &:hover > p{
+                        color: $blanco!important;
+                    }
+                }
+                &.sass{
+                    &:hover > i{
+                        color: $blanco!important;
+                    }
+                    &:hover{
+                        background-color: #bf4080;
+                    }
+                    &:hover > p{
+                        color: $blanco!important;
+                    }
+                }
+            }
+          }
+    }
+}

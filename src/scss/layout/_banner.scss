@@ -1,0 +1,96 @@
+.banner{
+    .wave{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        @include tabletMax{
+            height: 50px!important;
+        }
+    }
+}
+.fondo{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/portada-principal.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .contenedor{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background:rgba(0,0,0,0.7);
+        .presentacion{
+            @include tablet{
+                padding: 10px 60px;
+                top: 17%;
+            }
+            padding: 10px 30px;
+            width: 100%;
+            position: absolute;
+            top: 13%;
+            max-width: 50rem;
+            h1,h2,p{
+                @include tablet{
+                    line-height: 5.5rem;
+                }
+                color: white;
+                margin: 0;
+                padding: 0;
+                line-height: 3.5rem;
+            }
+            h1{
+                @include tablet{
+                    font-size: 3.5rem;
+                }
+                font-size: 2rem;
+                span{
+                    display: inline-block;
+                    &::after{
+                        content: "";
+                        height: 1rem;
+                        width: 100%;
+                        background-color: $azul;
+                        display: block;
+                        margin: -1.7rem 0 0 0;
+                    }
+                }
+            }
+            h2{
+                @include tablet{
+                    font-size: 3rem;
+                }
+                font-size: 2rem;
+            }
+            p{
+                @include tablet{
+                    font-size: 2em;
+                }
+                color: $blanco!important;
+                font-size: 1em;
+                margin-top: 10px;
+                font-family: $fuente_principal;
+            }
+            a{
+                position: relative;
+                color: $azul;
+                padding: 10px 30px;
+                text-decoration: none;
+                border: 2px solid $azul;
+                display: inline-block;
+                margin-top: 20px;
+                font-size: 1.5em;
+                transition: all .8s ease;
+                overflow: hidden;
+                &:hover{
+                    color: white;
+                    background-color: #2874A6;
+                }
+            }
+        }
+    }
+}

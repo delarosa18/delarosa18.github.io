@@ -1,0 +1,35 @@
+.sobre-mi{
+    @include tablet{
+        margin-top: 100px;
+    }
+    margin-top: 0;
+    .contenido{
+        display: block;
+        @include tablet{
+            display: flex;
+            justify-content: space-around;
+        }
+        .texto, .imagen{
+            width: 100%;
+            @include tablet{
+                width: 45%;
+            }
+        }
+        img{
+            width: 100%;
+            @include tabletMax{
+                margin-top: 1rem;
+            }
+        }
+        .texto{
+            display: block;
+            text-align: justify;
+            p,a{
+                color: $negro;
+            }
+            h1{
+                color: $azul;
+            }
+        }
+    }
+}
